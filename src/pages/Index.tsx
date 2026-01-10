@@ -150,13 +150,13 @@ export default function Index() {
               <h1 className="text-2xl font-bold text-foreground">RentHub</h1>
             </div>
             <nav className="hidden md:flex items-center gap-6">
-              <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">
+              <a href="/services" className="text-muted-foreground hover:text-foreground transition-colors">
                 Каталог
               </a>
-              <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">
+              <a href="#how-it-works" className="text-muted-foreground hover:text-foreground transition-colors">
                 Как это работает
               </a>
-              <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">
+              <a href="#become-owner" className="text-muted-foreground hover:text-foreground transition-colors">
                 Стать арендодателем
               </a>
             </nav>
@@ -194,8 +194,8 @@ export default function Index() {
                   onChange={(e) => setSearchQuery(e.target.value)}
                 />
               </div>
-              <Button size="lg" className="h-14 px-8">
-                Найти
+              <Button size="lg" className="h-14 px-8" asChild>
+                <a href="/services">Найти</a>
               </Button>
             </div>
           </div>
